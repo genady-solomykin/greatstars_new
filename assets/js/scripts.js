@@ -141,11 +141,11 @@ let str = 'Абигейл, Аделаида, Аделин, Адель, Адри�
 
 let res = str.split(",");
 
-res.forEach((item, i) => {
-   let crtElmLi = document.createElement('li');
-        crtElmLi.innerHTML = i + ' - ' + item;
+for (let i = 1; i < res.length; i++) {
+    let crtElmLi = document.createElement('li');
+        crtElmLi.innerHTML = i + ' - ' + res[i];
         list.appendChild(crtElmLi);
-});
+}
 
 
 
