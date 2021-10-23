@@ -148,15 +148,7 @@ for (let i = 1; i < res.length; i++) {
 
 
 $(document).ready( function() {
-    setTimeout( () => {
-        let name = prompt("Введите ваше Имя");
-            if(name.length == 0) {
-                alert('Укажите ваше Имя');
-                let name = prompt("Введите ваше Имя");
-            }else {
                 alert(`Приветвую вас: ${name} На сайте GreatStar! Мы добавили раздел телевидение, теперь вы можете смотреть более 1000 каналов на нашем сайте.`); 
-            }
+            
     
-        
-    },1500)
 })
