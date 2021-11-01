@@ -147,6 +147,17 @@ for (let i = 1; i < res.length; i++) {
 }
 
 
+$(function() {
+    $(window).scroll(function() {
+      if($(this).scrollTop() > 60) {
+        $('.royte').css('top', 0)
+      } else {
+        $('.royte').css('top', '60px').css('transition', '.8s')
+      }
+    });
+   });
+
+
 // $(document).ready( function() {
 //                 alert(`Приветвую вас: ${name} На сайте GreatStar! Мы добавили раздел телевидение, теперь вы можете смотреть более 1000 каналов на нашем сайте.`); 
             
