@@ -153,7 +153,7 @@ $(function() {
         $('.royte').css('top', '60px')
         $('.position-text-header').css({'position': 'fixed', 'top': 0})
       } else {
-        $('.royte').css({'top': '115px', 'transition': '.8s'})
+        $('.royte').css({'top': '120px', 'transition': '.8s'})
         $('.position-text-header').css({'position': 'initial', 'top': 0})
       }
     });
