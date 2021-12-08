@@ -573,7 +573,7 @@
             <!-- Подписчики -->
             <div class="follower">
                 <div class="container" style="padding: 0;">
-                    <div class="follower-wrapper" style="background-color: #fff; color: #000;">
+                    <div class="follower-wrapper" style="background-color: #fff; color: #000; padding-bottom: 45px;">
                         <div style="text-align: center; border-bottom: 1px solid #ececec; padding-bottom: 5px;">
                             <h2>Наши подписчики</h2>
                             <p style="text-align: center; color: #000;">С нами уже более 20.000 человек, будь тоже с нами!</p>
@@ -589,9 +589,88 @@
                         <!-- <ul style="list-style-type: none; max-height: 40vh; overflow-y: auto;" class="follower-wrapper__list"></ul>    -->
                         <div class="wrp-counter">
                             <div class="counter">
-                                <span>54.853</span>
+                                <span>55.138</span>
                                 <div class="subscriber">Подписчик</div>
                             </div>
+                        </div>
+                        <style>
+                           .pulse {
+                                position: relative; 
+                                text-align: center; 
+                                padding: 20px; 
+                                border-radius: 50%;
+                                background: #3D64FF;
+                                width: 120px;
+                                height: 120px;
+                                margin-left: auto;
+                                margin-right: 25px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: #fff;
+                            }
+
+                            .pulse::before {
+                                content: '';
+                                position: absolute;
+                                border: 2px solid #3D64FF;
+                                left: -20px;
+                                opacity: 0;
+                                right: -20px;
+                                top: -20px;
+                                bottom: -20px;
+                                border-radius: 50%;
+                                animation: pulse 2.5s linear infinite;
+                                }
+
+                                @keyframes pulse {
+                                    0% {
+                                        transform: scale(0.5);
+                                        opacity: 0;
+                                    }
+                                    50% {
+                                        opacity: 1;
+                                    }
+                                    100% {
+                                        transform: scale(1.2);
+                                        opacity: 0;
+                                    }
+                                }
+
+                                .pulse::after,
+                                .pulse::before {
+                                content: '';
+                                position: absolute;
+                                border: 2px solid #3D64FF;
+                                left: -20px;
+                                opacity: 0;
+                                right: -20px;
+                                top: -20px;
+                                bottom: -20px;
+                                border-radius: 50%;
+                                animation: pulse 2.5s linear infinite;
+                                }
+
+                                .pulse::after {
+                                animation-delay: 1.25s;
+                                }
+
+                                @keyframes pulse {
+                                0% {
+                                    transform: scale(0.5);
+                                    opacity: 0;
+                                }
+                                50% {
+                                    opacity: 1;
+                                }
+                                100% {
+                                    transform: scale(1.2);
+                                    opacity: 0;
+                                }
+                                }
+                        </style>
+                        <div class="pulse">
+                            <span style="font-size: 21px;">1.147.827</span>
                         </div>
                     </div>        
                 </div>
